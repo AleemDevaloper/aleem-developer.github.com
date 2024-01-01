@@ -1,0 +1,91 @@
+#wrapper{
+    background: url(../images/Untitled\ design.jpg) no-repeat;
+       background-size: 100% 100%;
+       height: 100%;
+      overflow-x: hidden;
+    scroll-behavior: smooth;
+
+
+          .home{
+                color: $sub-main-color;
+                
+                .home-txt{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    h3{
+                        color: $sub2-main-color;
+                    }
+                    h1{
+                        color: $main-color;
+                    }
+                    p{
+                        color: $sub2-main-color;
+                    }
+                    .btn-1{
+                        background-color: $main-color;
+                        color: $sub4-color;
+                        padding: 10px 20px;
+                    }
+                    
+                    .btn-1:hover{
+                        background-color: transparent;
+                        color: $sub-main-color;
+                        border-color: $main-color;
+                    }
+                    .btn-2{
+                        background-color: transparent;
+                        border-color: $main-color;
+                        color: $sub-main-color;
+                        padding: 10px 20px;
+                    }
+                    .btn-2:hover{
+                        background-color: $main-color;
+                        color: $sub4-color;
+                    }
+                    @media (max-width: 325px ) {
+                        .btn-2{
+                          
+                            padding: 5px 8px;
+                        }  
+                        .btn-1{
+                            padding: 5px 8px;
+                        }
+                    }
+                }
+                    
+                .home-img{
+                     width: 370px;
+                     height: 480px;
+                     margin: 0px 20px;
+                     position: relative;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+               img{
+                position: absolute;
+               }
+            
+                }
+                .home-txt-2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: $sub3-main-color;
+                    border-radius: 30px;
+                    margin: 20px 0px;
+                    height: 90%;
+                    width: 100%;
+                    ul{
+                        li{
+                            margin: 20px 0px;
+                            h2{
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+            } 
+        
+}

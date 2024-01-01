@@ -1,0 +1,79 @@
+.skills{
+  padding: 60px 0px;
+.containre-md{
+    @media (max-width: 1199px) {
+        max-width: 940px;
+    }
+    @media (max-width: 968px) {
+        max-width: 680px;
+    }
+    @media (max-width: 678px) {
+      max-width: 520px;
+    }
+}
+
+  .pl-3{
+    padding-left: 30px;
+  }
+    .btn-2{
+        background-color: transparent;
+        border-color: $main-color;
+        color: $sub-main-color;
+        padding: 10px 20px;
+    }
+    .btn-2:hover{
+        background-color: $main-color;
+        color: $sub4-color;
+    }
+    .meter{  
+         text-align: center;
+         border-radius: 20px;
+         background-color: $sub3-main-color;
+         border: 1px solid $sub2-main-color;
+         margin: 4px;
+         width: 160px;
+        .mtr{
+           padding-left: 10px;
+           padding-right: 10px;
+           color: $sub2-main-color;
+        }
+    }
+    .skills-b{
+        border: 1px solid $sub2-main-color;
+        border-radius: 10px;
+        margin: 4px;
+        max-width: 200px;
+        @media (max-width: 1212px) {
+            max-width: 180px;
+        }
+        @media (max-width: 1199px) {
+          max-width: 100%;
+          .meter{
+            width: 100%;
+          }
+        }
+        @media (max-width: 490px) {
+          margin: 0px 20px;
+      }
+      @media (max-width: 390px) {
+        margin: 4px;
+    }
+      @media (max-width: 358px) {
+      margin: 25px;
+       }
+        }
+    
+    .skills-b:hover{
+        border: 1px solid $main-color;
+        cursor: pointer;
+        .meter{
+            background-color: $main-color;
+            .mtr{
+                color: $sub3-main-color;
+            }
+        }
+    }
+
+}
+
+
