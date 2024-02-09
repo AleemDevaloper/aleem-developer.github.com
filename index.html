@@ -12,14 +12,17 @@
   <meta content="" name="keywords">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+
   <!-- Fav icons -->
   <link href="Assets/images/logo.png" rel="icon">
   <link href="Assets/images/logo.png" rel="apple-touch-icon">
   <!--bootstarap-->
   <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-  <script src="./Assets/JS/jquery-3.7.0.min.js"></script>
+  
 
+  <!-- carasoul  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
   <!-- fade up animation -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Main CSS File -->
@@ -41,54 +44,61 @@
     <div class="top-area">
       <!-- ====== header ======== -->
       <header>
-        <nav class="navbar navbar-expand-lg bg-body-dark">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-transparent bg-body-dark">
           <div class="container">
-            <a class="navbar-brand sub-color" href="#">
-              <img src="Assets/images/logo1.png" alt="">Aleem Developer
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
+            <a class="navbar-brand fs-4 sub-color" href="#"><img src="Assets/images/logo1.png" alt="">Aleem
+              Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <div id="navicon">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#certificate">Certificates</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-
-              </ul>
-
-              <div class="s-d">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="content">
-                      <div class="text m-2 p-3">
-                        <p>Let's Talk</p>
-                      </div>
-
-                      <div class="icon p-2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header sub-main-color">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="Assets/images/logo1.png" alt="">Aleem
+                  Developer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#packages">Packages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center align-item-center">
+                  <div class="s-d">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="content">
+                          <div class="text m-2 p-3">
+                            <p>Let's Talk</p>
+                          </div>
+                          <div class="icon p-2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -97,6 +107,8 @@
             </div>
           </div>
         </nav>
+
+
 
         <div class="row flex-column click" id="click">
           <div class="col mt-5">
@@ -126,35 +138,42 @@
         <div class="container">
           <div class="row ">
             <div class="col-lg-6 col-xl-5 home-txt">
-              <h3  data-aos="fade-up"   data-aos-duration="3000">Hi I'm</h3>
-              <h1  data-aos="fade-up"   data-aos-duration="3000"><b>Muhammad Aleem</b></h1>
-              <h1  data-aos="fade-up"   data-aos-duration="3000">Web developer</h1>
+              <h3 data-aos="fade-up" data-aos-duration="3000">Hi I'm</h3>
+              <h1 data-aos="fade-up" data-aos-duration="3000"><b>Muhammad Aleem</b></h1>
+              <h1 data-aos="fade-up" data-aos-duration="3000">Web developer</h1>
               <br>
               <br>
-              <p  data-aos="fade-up"   data-aos-duration="3000">We Provide best service with proper client satisfaction</p><br>
+              <p data-aos="fade-up" data-aos-duration="3000">We Provide best service with proper client satisfaction</p>
+              <br>
               <div class="d-flex">
-                <button class="btn-1 btn m-2"  data-aos="fade-up"   data-aos-duration="3000"><a href="#contact">Hire Me</a></button>
-                <button class="btn-2 btn m-2"  data-aos="fade-up"   data-aos-duration="3000" ><a href="./Assets/resume/My resume.pdf" download>Download</a></button>
+                <button class="btn-2 btn m-2" data-aos="fade-up" data-aos-duration="3000"><a href="#contact">Contact
+                    Now</a></button>
               </div>
             </div>
-            <div class="col-lg-5 col-xl-3"  data-aos="fade-up"   data-aos-duration="3000">
+            <div class="col-lg-5 col-xl-3" data-aos="fade-up" data-aos-duration="3000">
               <div class="home-txt-2">
                 <ul type="none">
 
                   <li>
-                    <h2 data-aos="fade-up"   data-aos-duration="3000"><div>3+</div></h2>
+                    <h2>
+                      <div>3k+</div>
+                    </h2>
                     <p>Years of experience</p>
                   </li>
 
 
                   <li>
-                    <h2  data-aos="fade-up"   data-aos-duration="3000"><div>1k+</div></h2>
+                    <h2>
+                      <div>2k+</div>
+                    </h2>
                     <p>Project Complete</p>
                   </li>
 
 
                   <li>
-                    <h2 data-aos="fade-up"   data-aos-duration="3000"><div>100%</div></h2>
+                    <h2>
+                      <div>100%</div>
+                    </h2>
                     <p>Client satisfaction</p>
                   </li>
 
@@ -163,7 +182,7 @@
 
 
             </div>
-            <div class="col-lg-12 col-xl-4"  data-aos="fade-up"   data-aos-duration="3000">
+            <div class="col-lg-12 col-xl-4" data-aos="fade-up" data-aos-duration="3000">
               <div class="d-flex justify-content-center align-items-center">
                 <div class="home-img">
                   <img src="Assets/images/team-1.jpg" alt="" class="img1">
@@ -181,73 +200,210 @@
 
 
     <section class="main" id="about">
-      <section class="about"  data-aos="fade-up"   data-aos-duration="3000">
+      <section class="about" data-aos="fade-up" data-aos-duration="3000">
 
         <div class="container">
           <div class="row justify-content-center align-items-center flex-column-lg">
             <div class="about-txt col">
-              <h6 class="sub2-main-color"  data-aos="fade-up"   data-aos-duration="3000">About Me</h6><br>
-              <h1 class="sub-main-color"  data-aos="fade-up"   data-aos-duration="3000">Professional <font class="main-color"> Problem Solutions </font> For Digital
+              <h6 class="sub2-main-color" data-aos="fade-up" data-aos-duration="3000">About Me</h6><br>
+              <h1 class="sub-main-color" data-aos="fade-up" data-aos-duration="3000">Professional <font
+                  class="main-color"> Problem Solutions </font> For Digital
                 Products</h1><br>
 
-              <p class="sub2-main-color"  data-aos="fade-up"   data-aos-duration="3000">At vero eos et accusamus etodio dignissimos ducimus praesentium voluptatum
+              <p class="sub2-main-color" data-aos="fade-up" data-aos-duration="3000">At vero eos et accusamus etodio
+                dignissimos ducimus praesentium voluptatum
                 corrupti quos
                 dolores quas molestias excepturi sint occaecati cupiditate
                 provident qui officia deserunt mollitia animi, id est laborum et dolorum</p><br>
               <div class="row">
-                <div class="col d-flex"  data-aos="fade-up"   data-aos-duration="3000">
+                <div class="col d-flex" data-aos="fade-up" data-aos-duration="3000">
                   <h3 class="main-color">1-</h3>
                   <h3 class="sub-main-color"> Business Websites</h3>
                 </div>
-                <div class="col d-flex"  data-aos="fade-up"   data-aos-duration="3000">
+                <div class="col d-flex" data-aos="fade-up" data-aos-duration="3000">
                   <h3 class="main-color">2-</h3>
                   <h3 class="sub-main-color"> E commerence websites</h3>
                 </div>
               </div>
               <div class="row">
-                <div class="col d-flex"  data-aos="fade-up"   data-aos-duration="3000">
+                <div class="col d-flex" data-aos="fade-up" data-aos-duration="3000">
                   <h3 class="main-color">3-</h3>
                   <h3 class="sub-main-color"> Custom Websites</h3>
                 </div>
-                <div class="col d-flex"  data-aos="fade-up"   data-aos-duration="3000">
+                <div class="col d-flex" data-aos="fade-up" data-aos-duration="3000">
                   <h3 class="main-color">4-</h3>
                   <h3 class="sub-main-color"> Product Design</h3>
                 </div>
               </div>
               <br>
-              <div class="row ab-c">
+              <div class="row ab-c" data-aos="fade-up" data-aos-duration="3000">
                 <div class="col">
                   <div class="d-flex justify-content-center align-items-center">
-                    <img src="Assets/images/mail.png" alt=""  data-aos="fade-up"   data-aos-duration="3000">
+                    <img src="Assets/images/mail.png" alt="">
                     <div class="row flex-column m-1">
-                      <div class="col sub-main-color"  data-aos="fade-up"   data-aos-duration="3000">Email Us</div>
-                      <div class="col sub-main-color"  data-aos="fade-up"   data-aos-duration="3000">aleemirfan672@gmail.com</div>
+                      <div class="col sub-main-color">Email Us</div>
+                      <div class="col sub-main-color">aleemirfan672@gmail.com</div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="d-flex justify-content-center align-items-center">
-                    <img src="Assets/images/call.png" alt=""  data-aos="fade-up"   data-aos-duration="3000">
+                    <img src="Assets/images/call.png" alt="">
                     <div class="row flex-column m-1">
-                      <div class="col sub-main-color"  data-aos="fade-up"   data-aos-duration="3000">Contect US</div>
-                      <div class="col sub-main-color"  data-aos="fade-up"   data-aos-duration="3000">+92 3224 753036</div>
+                      <div class="col sub-main-color">Contect US</div>
+                      <div class="col sub-main-color">+92 3224 753036</div>
                     </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <div class="about-img col d-flex justify-content-center align-items-center"  data-aos="fade-up"   data-aos-duration="3000">
+            <div class="about-img col d-flex justify-content-center align-items-center">
               <img src="Assets/images/about.jpg" alt="">
             </div>
           </div>
         </div>
       </section>
 
+      <section class="projects my-5 "data-aos="fade-up" data-aos-duration="3000" id="Projects">
+        <div class="container">
+          <div class="text-center my-5">
+            <h4 class="h1-sub2">Explore Completed Projects</h4>
+            <h1 class="h1-sub">See Some of my Projects</h1>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-4 my-2 ">
+              <div class="car bg-black rounded-5">
+                <div class="img-sec">
+                  <img src="Assets/images/p-img-1.PNG" alt="/img">
+                </div>
+                <div class="text-center my-2 mx-2">
+                  <h3 class="my-3">Shoes ECommerce Website</h3>
+                  <button class="btn btn-2"><a href="https://aleemdevaloper.github.io/shoes.github.com/" class="sub-main-color">View Project</a> </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 my-2 ">
+              <div class="car bg-black rounded-5">
+                <div class="img-sec">
+                  <img src="Assets/images/p-img2.PNG" alt="/img">
+                </div>
+                <div class="text-center my-2 mx-2">
+                  <h3 class="my-3">Custom Website</h3>
+                  <button class="btn btn-2"><a href="https://aleemdevaloper.github.io/rmt.github.com/" class="sub-main-color">View Project</a> </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 my-2 ">
+              <div class="car bg-black rounded-5">
+                <div class="img-sec">
+                  <img src="Assets/images/p-img3.PNG" alt="/img">
+                </div>
+                <div class="text-center my-2 mx-2">
+                  <h3 class="my-3">Real state</h3>
+                  <button class="btn btn-2"><a href="https://aleemdevaloper.github.io/real-state.github.com/" class="sub-main-color">View Project</a> </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 my-2 ">
+              <div class="car bg-black rounded-5">
+                <div class="img-sec">
+                  <img src="Assets/images/p-img-4.PNG" alt="/img">
+                </div>
+                <div class="text-center my-2 mx-2">
+                  <h3 class="my-3">Protfolio Website</h3>
+                  <button class="btn btn-2"><a href="https://aleemdevaloper.github.io/project.github.io/" class="sub-main-color">View Project</a> </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 my-2 ">
+              <div class="car bg-black rounded-5">
+                <div class="img-sec">
+                  <img src="Assets/images/p-img-5.PNG" alt="/img">
+                </div>
+                <div class="text-center my-2 mx-2">
+                  <h3 class="my-3">Custom Website</h3>
+                  <button class="btn btn-2"><a href="https://aleemdevaloper.github.io/slider.github.io/" class="sub-main-color">View Project</a> </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 my-2 ">
+              <div class="car bg-black rounded-5">
+                <div class="img-sec">
+                  <img src="Assets/images/p-img-7.jpg" alt="/img">
+                </div>
+                <div class="text-center my-2 mx-2">
+                  <h3 class="my-3">Company website</h3>
+                  <button class="btn btn-2"><a href="https://aleemdevaloper.github.io/italian-food.github.com/" class="sub-main-color">View Project</a> </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PARTNER -->
+      
+    <section class="clients bg-black py-5" data-aos="fade-up" data-aos-duration="3000">
+      <section class="c-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 py-5 text-center sub-main-color">
+              <h4 class="sub2-main-color">Clients</h4>
+             <h1>My Happy Clients</h1>
+            </div>
+            <div class="col-12 py-3">
+              <div class="slider-area">
+                <div class="c-slider">
+                  <div>
+                    <div class="img-hold">
+                      <img src="Assets/images/partner-3.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="img-hold">
+                      <img src="Assets/images/partner-1.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="img-hold">
+                      <img src="Assets/images/partner-2.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="img-hold">
+                      <img src="Assets/images/partner-4.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="img-hold">
+                      <img src="Assets/images/partner-5.png" alt="">
+                    </div>
+                  </div>
+                 
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    
 
       <section class="skills" id="skills">
-        <div class="container-xxl containre-md" >
-          <div class="row justify-content-center align-items-center pt-4 pb-4"  data-aos="fade-up"   data-aos-duration="3000">
+        <div class="container-xxl containre-md">
+          <div class="row justify-content-center align-items-center pt-4 pb-4" data-aos="fade-up"
+            data-aos-duration="3000">
             <div class="col-xl-4 col-lg-12 pl-3">
               <h5 class="sub2-main-color">My Skills</h5><br>
               <h1 class="sub-main-color">Let's Explore Popular <br>
@@ -279,7 +435,7 @@
                     <h5 class="sub2-main-color">CSS 3</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">80%</h3>
                   </div>
                 </div>
                 <div class="col skills-b">
@@ -288,7 +444,7 @@
                     <h5 class="sub2-main-color">Bootstrap</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">90%</h3>
                   </div>
                 </div>
                 <div class="col skills-b">
@@ -297,7 +453,7 @@
                     <h5 class="sub2-main-color">Sass</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">90%</h3>
                   </div>
                 </div>
               </div>
@@ -309,7 +465,7 @@
                     <h5 class="sub2-main-color">Java Script</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">75%</h3>
                   </div>
                 </div>
                 <div class="col skills-b">
@@ -318,7 +474,7 @@
                     <h5 class="sub2-main-color">Photoshop</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">70%</h3>
                   </div>
                 </div>
                 <div class="col skills-b">
@@ -327,7 +483,7 @@
                     <h5 class="sub2-main-color">Illustrator</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">70%</h3>
                   </div>
                 </div>
                 <div class="col skills-b">
@@ -336,7 +492,7 @@
                     <h5 class="sub2-main-color">Figma</h5>
                   </div>
                   <div class="meter">
-                    <h3 class="mtr">95%</h3>
+                    <h3 class="mtr">80%</h3>
                   </div>
                 </div>
               </div>
@@ -346,11 +502,11 @@
 
         </div>
       </section>
+   
 
-
-      <section class="certificate" id="certificate">
-        <div class="container">
-          <div class="row"  data-aos="fade-up"   data-aos-duration="3000">
+      <section class="certificate">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+          <div class="row">
             <div class="col-12">
               <div class="certificates-txt">
                 <h3>My <font class="main-color">Certificates</font>
@@ -358,7 +514,7 @@
               </div>
             </div>
           </div>
-          <div class="row"  data-aos="fade-up"   data-aos-duration="3000">
+          <div class="row">
             <div class="col-md-4 col-sm-8"><img src="Assets/images/certifcate of html5.PNG" alt=""></div>
             <div class="col-md-4 col-sm-8"><img src="Assets/images/certifcate of html5.PNG" alt=""></div>
             <div class="col-md-4 col-sm-8"><img src="Assets/images/certifcate of html5.PNG" alt=""></div>
@@ -366,9 +522,170 @@
         </div>
       </section>
 
-      <section class="contact-us  data-aos="fade-up"    data-aos-duration="3000" id="contact">
+      <section class="packages my-5 py-5" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
-          <div class="row"  data-aos="fade-up"   data-aos-duration="3000">
+          <div class="row">
+            <div class="col-12 text-center my-3" id="packages">
+              <h4 class="h1-sub2">Best Packages</h4>
+              <h1 class="h1-main">
+                <div class="h1-sub"> Professional Web Development</div> Pricing & Packages
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 sub2-main-color text-center my-5">
+              <div class="bg-grey rounded-5 px-3 py-2">
+                <h1 class="h1-sub">Start Up</h1>
+                <h4>Website Development Package</h4>
+                <ul class=" bg-black py-3 my-3 rounded-5">
+                  <li class="li-1 my-2">Upto 5 Pages</li>
+                  <li class="li-1 my-2">Logo , Slider</li>
+                  <li class="li-1 my-2">Contact Form</li>
+                  <li class="li-1 my-2">Dynamic Website</li>
+                  <li class="li-1 my-2">Domian-6 Months Free</li>
+                  <li class="li-1 my-2">Hosting Free for 1st Year</li>
+                  <li class="li-1 my-2">WhatsApp Chat Integration</li>
+                  <li class="li-1 my-2">Fully Responsive</li>
+                  <li class="li-1 my-2">Delivery In 5 Days</li>
+                  <li><button class="btn btn-2 mt-5">600$</button> </li>
+                  <li><button class="btn btn-2 mt-2 px-3"> <a href="#contact" class="sub-main-color">Contact
+                        Us</a></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 sub2-main-color text-center ">
+              <div class="bg-grey rounded-5 px-3 py-3">
+                <h1 class="h1-sub">Small Business</h1>
+                <h4>Website Development Package</h4>
+                <ul class="bg-black py-5 my-3 rounded-5">
+                  <li class="li-1 my-2">Upto 10 Pages</li>
+                  <li class="li-1 my-2">Logo , Slider</li>
+                  <li class="li-1 my-2">Contact Form</li>
+                  <li class="li-1 my-2">Dynamic Website</li>
+                  <li class="li-1 my-2">Domian Free for 1st Year</li>
+                  <li class="li-1 my-2">Hosting Free for 1st Year</li>
+                  <li class="li-1 my-2">WhatsApp Chat Integration</li>
+                  <li class="li-1 my-2">Fully Responsive</li>
+                  <li class="li-1 my-2">Delivery In 10 Days</li>
+                  <li><button class="btn btn-2 mt-5">1000$</button></li>
+                  <li><button class="btn btn-2 mt-2 px-3"><a href="#contact" class="sub-main-color">Contact
+                        Us</a></button></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 bg-light-grey sub2-main-color text-center my-5">
+              <div class="bg-grey rounded-5 px-3 py-2 ">
+                <h1 class="h1-sub">ECommerce</h1>
+                <h4>Website Development Package</h4>
+                <ul class=" bg-black py-3 my-3 rounded-5">
+                  <li class="li-1 my-2">Upto 15 Pages</li>
+                  <li class="li-1 my-2">Logo , Slider</li>
+                  <li class="li-1 my-2">Contact Form</li>
+                  <li class="li-1 my-2">Dynamic Website</li>
+                  <li class="li-1 my-2">Domian Free for 1st Year</li>
+                  <li class="li-1 my-2">Hosting Free for 1st Year</li>
+                  <li class="li-1 my-2">WhatsApp Chat Integration</li>
+                  <li class="li-1 my-2">Fully Responsive</li>
+                  <li class="li-1 my-2">Delivery In 15 Days</li>
+                  <li><button class="btn btn-2 mt-5">1500$</button> </li>
+                  <li><button class="btn btn-2 mt-2 px-3"><a href="#Contact Us" class="sub-main-color"> Contact
+                        Us</a></button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-black py-5">
+          <div class="container sub2-main-color py-3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row" >
+              <div class="col-12">
+                <div class="text-center main-color">
+                  <h1>Information</h1>
+                </div>
+              </div>
+            </div>
+            <div class="row my-5">
+              <div class="col">
+                <div class="text-center txt">
+                  <h1 class="h1-sub my-3">PSD, Xd , Ai to Html</h1>
+                </div>
+                <div class="text-center">
+                  <p>I Provide Best PSD,XD,Ai to Html 5 conversion Webdevelopment Service . Over code is validated by
+                    W3C,
+                    optimized for SEO, compatible with several browsers and coded by hand. I have worked on countless
+                    web development projects</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center txt">
+                  <h1 class="h1-sub my-3">Figma to Html</h1>
+                </div>
+                <div class="text-center">
+                  <p>I Provide Best Figma Template to Html 5 conversion Webdevelopment Service . Over code is validated
+                    by W3C,
+                    optimized for SEO, compatible with several browsers and coded by hand. I have worked on countless
+                    web development projects</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center txt">
+                  <h1 class="h1-sub my-3">Wordpress Development</h1>
+                </div>
+                <div class="text-center">
+                  <p>I Provide Best Wordpress website development Service . Over code is validated by W3C,
+                    optimized for SEO, compatible with several browsers and coded by hand. I have worked on countless
+                    web development projects</p>
+                </div>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col">
+                <div class="text-center txt">
+                  <h1 class="h1-sub my-3">PHP Webdevelopment</h1>
+                </div>
+                <div class="text-center">
+                  <p>I am expert in providing unique and personalized PHP development
+                    services. I have access to the latest innovations in PHP development which, with our creative and
+                    coding experience, help us deliver the best results that will exceed your expectations.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center txt">
+                  <h1 class="h1-sub my-3">Custom Webdevelopment</h1>
+                </div>
+                <div class="text-center">
+                  <p>I have worked on countless custom web development projects. If you want to create your own website
+                    that differentiates
+                    your brand from the rest, you can be sure that we can deliver it, whatever your requirements.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center txt">
+                  <h1 class="h1-sub my-3">Business, ECommerce</h1>
+                </div>
+                <div class="text-center">
+                  <p>I Provide Best Ecommerence and Business Webdevelopment Service . I am expert in making business
+                    website
+                    I belive that business website play an important role in growth of business if need a website for
+                    any profesional
+                    business or even for local business fell free to contact Us
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <section class="contact-us  data-aos=" fade-up" data-aos-duration="3000" id="contact">
+        <div class="container">
+          <div class="row" data-aos="fade-up" data-aos-duration="3000">
 
             <div class="col-lg">
               <div class="contact-txt">
@@ -378,8 +695,8 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, magni!</p>
                 <br>
                 <ul>
-                  <li>5+ Experience</li>
-                  <li>Professional Websdevelopment</li>
+                  <li>3+ Experience</li>
+                  <li>Professional Web Development</li>
                   <li>Best Quality code</li>
                 </ul>
               </div>
@@ -387,8 +704,7 @@
 
             <div class="col-lg">
               <div class="contact-form">
-                <form   action="https://formspree.io/f/xleqgkaz"
-                method="POST" class="d-flex flex-column">
+                <form action="https://formspree.io/f/xleqgkaz" method="POST" class="d-flex flex-column">
                   <div class="d-flex">
                     <input type="text" name="name" id="" placeholder="Enter Name" required>
                     <input type="email" name="email" id="" placeholder="Enter email" required>
@@ -413,7 +729,7 @@
       <footer id="footer">
         <div class="footer-up">
           <div class="container">
-            <div class="row"  data-aos="fade-up"   data-aos-duration="3000">
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
 
               <div class="col d-flex flex-column  justify-content-center">
                 <div class="loc">
@@ -442,8 +758,7 @@
 
               <div class="col">
                 <div class="form">
-                  <form    action="https://formspree.io/f/xleqgkaz"
-                  method="POST">
+                  <form action="https://formspree.io/f/xleqgkaz" method="POST">
                     <div class="d-flex justify-content-center flex-column text-center">
                       <h2>Contact Us</h2>
                       <input type="text" name="name" id="" placeholder="Enter Your Name" required>
@@ -461,8 +776,8 @@
 
         <div class="footer-down">
           <div class="container">
-            <div class="text-center" >
-              &copy;Copyright @2023, All Rights Reserved
+            <div class="text-center">
+              &copy;Copyright 2023, All Rights Reserved
               <font class="main-color">Made by Muhammed Aleem</font>
             </div>
           </div>
@@ -470,22 +785,24 @@
 
 
       </footer>
- 
+
 
 </body>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
+<script>
+  AOS.init();
 
-  </script>
+</script>
 
 
 <!-- bootstrap js file -->
-<script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+<script src="Assets/JS/bootstrap.bundle.min.js"></script>
 <!-- Template Main JS File -->
-
-<script src="./Assets/JS/index.js"></script>
+<script src="Assets/JS/jquery-3.7.0.min.js"></script>
+<script src="Assets/JS/index.js"></script>
+<<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 <noscript>Your browser do not support the Javascript</noscript>
 
 </html>
