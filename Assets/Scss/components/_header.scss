@@ -11,11 +11,23 @@ header{
             font-size: 15px;
         }
     }
+    .btn-close{
+        border: 1px solid $sub2-main-color;
+    }
+    .btn-close:hover{
+        border: 1px solid cyan;
+    }
+    .sidebar{
+        background-color: $sub4-color;
+        border-right: 2px solid cyan !important;
+        border-top: 1px  solid cyan !important;
+        border-bottom: 1px solid cyan  !important;
+    }
     .sticky{
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: #222222;
+        background-color: #292929 !important;
       }
     .navbar-toggler{
         color: $main-color;
@@ -46,6 +58,7 @@ header{
                 transition: 0.25s ease-in-out;
                 right: 0;
             }
+            
             span:first-child{
                 top: 5px;
             }
@@ -55,6 +68,25 @@ header{
             }
              span:last-child {
                 top: 18px;
+               
+            }
+        }
+        #navicon:hover{
+            span{
+                transform: rotate(55deg);
+                height: 3px;
+            }
+            span:nth-child(2){
+                transform: rotate(-55deg);
+                top: 10px;
+              
+            }
+            span:first-child{
+                top: 10px;
+            }
+            span:last-child{
+                
+                display: none;
                
             }
         }
@@ -148,14 +180,17 @@ header{
     }
 }
     .click{
+        position: fixed;
         display: none;
           transition: all .5s;
-          position: absolute;
           top: 0;
            color: $sub-main-color;
            background-color: $sub4-color;
            width: 400px;
-           height: 100vh;
+           bottom: 0;
+           z-index: var(--bs-offcanvas-zindex);
+           background-clip: padding-box;
+           outline: 0;
          
         .nav-logo{
             color: $sub-main-color;

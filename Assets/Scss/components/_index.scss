@@ -29,6 +29,7 @@
                     }
                     
                     .btn-1:hover{
+                        -webkit-transition: all .6s;
                         background-color: transparent;
                         color: $sub-main-color;
                         border-color: $main-color;
@@ -46,6 +47,7 @@
                         padding: 10px 20px;
                     }
                     .btn-2:hover{
+                        -webkit-transition: all .6s;
                         background-color: $main-color;
                         color: $sub4-color;
                     }

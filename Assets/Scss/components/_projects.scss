@@ -1,0 +1,9 @@
+.car{
+    display: flex !important;
+    flex-direction: column;
+    .img-sec{
+           img{
+            width: 100%;
+           }
+    }
+}
