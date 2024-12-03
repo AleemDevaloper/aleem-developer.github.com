@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <!-- Fav icons -->
+     <link href="/src/assets/images/logo1.png" rel="icon">
+     <link href="/src/assets/images/logo1.png" rel="apple-touch-icon">
+  
+    <!-- Discription and contacts -->
+    <title>Aleem Developer</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+   
+    
+    <!-- font awsome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- carasoul  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+  
+    <!-- fade up animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
+
+  <!-- =======================================================
+  * Template Name: Aleem Developer
+  * Made by: Muhammad Aleem
+  * Template URL: https://aleemdevaloper.github.io/aleem-developer.github.com/
+  * Author: Muhammad Aleem
+  * Git : aleem-developer.github.com
+  * License: Aleem developer
+  ======================================================== -->
+  </head>
+  <body style=" cursor: none;">
+    <style>
+     
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff center center no-repeat;
+}
+
+      /* Custom cursor styling */
+      .arrow {
+    border: 2px solid cyan;
+    border-radius: 50%;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    transform: matrix(1, 0, 0, 1, 697, 106),translate(-50%, -50%); 
+      z-index: 5;
+      left: 0;
+      top: 0;
+      transition: transform .1s, width .3s, height .3s;
+      pointer-events: none;
+  }
+  .dot{
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    top: 0;
+    left: 0;
+    background: cyan;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 5;
+    transform: matrix(1, 0, 0, 1, 697, 106),translate(-50%, -50%); 
+    transition: transform .07s, width .3s, height .3s, ; }
+    </style>
+     <div class="dot"></div>
+     <div class="arrow">
+     </div>
+    
+
+
+     <section class="top-area">
+        
+       <header>
+         <nav class="navbar navbar-dark navbar-expand-lg bg-transparent bg-body-dark">
+           <div class="container-xl w-100">
+             <a class="navbar-brand fs-4 " href="#"><img src="assets/images/logo1.png" alt=""/>Aleem
+               Developer</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+               <div id="navicon">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+               </div>
+             </button>
+ 
+             <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel">
+               <div class="offcanvas-header sub-main-color">
+                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/images/logo1.png" alt="" />Aleem
+                   Developer</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                 <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                   <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#about">About</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#skills">Skills</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#Projects">Projects</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#client">Clients</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#contact">Contact</a>
+                   </li>
+                 </ul>
+                 <div class="d-flex justify-content-center align-item-center">
+                   <div class="s-d">
+                     <div class="row">
+                       <div class="col-12">
+                         <div class="content">
+                           <div class="text m-2 p-3">
+                             <p>Let's Talk</p>
+                           </div>
+                           <div class="icon p-2">
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </nav>
+ 
+ 
+ 
+         <div class="row flex-column click" id="click">
+           <div class="col mt-5">
+             <div class="text-toogle">
+               <div class="nav-logo d-flex align-items-center">
+                 <img src="assets/images/logo1.png" alt="" />
+                 <div>Aleem developer</div>
+               </div>
+               <h4>I build Unique Digital websites
+                 for successful business
+                 </h4>
+               <p class="sub2-main-color">Professional Problem Solutions For Digital Products</p>
+               <h4>Main Office :</h4>
+               <ul type="none">
+                 <li><img src="assets/images/location.png" alt="" class="m-2" /><a href="">Lahore, City Punjab /
+                     Pakistan</a></li>
+                 <li><img src="assets/images/mail.png" alt="" class="m-2" /><a href="">aleemirfan672@gmail.com</a></li>
+                 <li><img src="assets/images/call.png" alt="" class="m-2" /><a href="">+92 3224 752036</a></li>
+               </ul>
+             </div>
+           </div>
+          
+         </div>
+           
+       
+       </header>
+       </section>
+
+
+
+
+     <section class="home" id="home">
+       <div class="container">
+         <div class="row ">
+           <div class="col-lg-6 col-xl-5 home-txt" data-aos="fade-up" data-aos-duration="3000">
+             <h3 class="my-2" >Hi I'm</h3>
+             <h1 class='h1 main-text'>Muhammad Aleem</h1>
+             <h1 class="my-1 mb-3">Web developer</h1>
+             <p>I Provide best service with proper client satisfaction</p>
+             
+             <div class="d-flex my-2">
+               <button class="btn-2 btn m-2" ><a href={cv} download>Download resume</a></button>
+             </div>
+           </div>
+           <div class="col-lg-5 col-xl-3" data-aos="fade-up" data-aos-duration="3000">
+             <div class="home-txt-2">
+               <ul type="none">
+
+                 <li>
+                   <h2>
+                     <div>3y+</div>
+                   </h2>
+                   <p>Years of experience</p>
+                 </li>
+
+
+                 <li>
+                   <h2>
+                     <div>2k+</div>
+                   </h2>
+                   <p>Project Complete</p>
+                 </li>
+
+
+                 <li>
+                   <h2>
+                     <div>100%</div>
+                   </h2>
+                   <p>Client satisfaction</p>
+                 </li>
+
+               </ul>
+             </div>
+
+
+           </div>
+           <div class="col-lg-12 col-xl-4" data-aos="fade-up" data-aos-duration="3000">
+             <div class="d-flex justify-content-center align-items-center">
+               <div class="home-img">
+                 <img src="./assets/images/team-1.jpg"alt="" class="img1" />
+               </div>
+             </div>
+           </div>
+
+         </div>
+
+       </div>
+     </section>
+   
+     
+
+ <section class="about" id="about" data-aos="fade-up" data-aos-duration="3000">
+
+<div class="container">
+ <div class="row justify-content-center align-items-center flex-column-lg">
+   <div class="about-txt col">
+     <h6 class="sub2-main-color mb-2" >About Me</h6>
+     <h1 class="sub-main-color my-2" >Professional <font
+         class="main-text"> Problem Solutions </font> For Digital
+       Products</h1>
+
+     <p class="sub2-main-color my-3">I design and create best digital products I provide solution for new and digital business I design and create professional websites for local business and brands</p>
+     <div class="row my-3">
+       <div class="col d-flex" >
+         <h3 class="main-color mx-1">1-</h3>
+         <h3 class="sub-main-color">Business Websites</h3>
+       </div>
+       <div class="col d-flex" >
+         <h3 class="main-color mx-1">2-</h3>
+         <h3 class="sub-main-color"> E commerence websites</h3>
+       </div>
+     </div>
+     <div class="row my-3">
+       <div class="col d-flex" >
+         <h3 class="main-color mx-1">3-</h3>
+         <h3 class="sub-main-color"> Custom Websites</h3>
+       </div>
+       <div class="col d-flex" >
+         <h3 class="main-color mx-1">4-</h3>
+         <h3 class="sub-main-color"> Product Design</h3>
+       </div>
+     </div>
+   
+     <div class="row ab-c my-4 mt-5" >
+       <div class="col">
+         <div class="d-flex justify-content-center align-items-center">
+           <img src="assets/images/mail.png"  alt="" />
+           <div class="row flex-column m-1">
+             <div class="col sub-main-color">Email Me</div>
+             <div class="col sub-main-color">aleemirfan672@gmail.com</div>
+           </div>
+         </div>
+       </div>
+       <div class="col">
+         <div class="d-flex justify-content-center align-items-center">
+           <img src="assets/images/call.png"  alt="" />
+           <div class="row flex-column m-1">
+             <div class="col sub-main-color">Contect Me</div>
+             <div class="col sub-main-color">+92 3224 753036</div>
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+   <div class="about-img col d-flex justify-content-center align-items-center">
+     <img src="assets/images/about.jpg" alt="" />
+   </div>
+ </div>
+</div>
+ </section>
+
+
+     <section class="projects my-5" id="Projects" data-aos="fade-up" data-aos-duration="3000">
+       <div class="container">
+         <div class="text-center my-5">
+           <h4 class="h1-sub2">Explore Completed Projects</h4>
+           <h1 class="h1-sub">See Some of my Projects</h1>
+         </div>
+         <div class="row my-5">
+           <div class="col-lg-4 my-lg-2 my-5 mx-lg-0 mx-md-3 mx-0">
+             <div class="car bg-black rounded-5">
+               <div class="img-sec">
+                 <img src="assets/images/capture.png" alt="/img" />
+               </div>
+               <div class="text-center my-2 mx-2">
+                 <h3 class="my-3">Autodrone Website</h3>
+                 <button class="btn btn-2 my-3"><a href="https://aleemdevaloper.github.io/Drone/" class="sub-main-color">View Project</a> </button>
+               </div>
+             </div>
+
+           </div>
+           <div class="col-lg-4 my-lg-2 my-5 mx-lg-0 mx-md-3 mx-0">
+             <div class="car bg-black rounded-5">
+               <div class="img-sec">
+                 <img src="assets/images/p-img2.png"  alt="/img" />
+               </div>
+               <div class="text-center my-2 mx-2">
+                 <h3 class="my-3">Custom Website</h3>
+                 <button class="btn btn-2 my-3"><a href="https://aleemdevaloper.github.io/rmt.github.com/" class="sub-main-color">View Project</a> </button>
+               </div>
+             </div>
+
+           </div>
+           <div class="col-lg-4 my-lg-2 my-5 mx-lg-0 mx-md-3 mx-0">
+             <div class="car bg-black rounded-5">
+               <div class="img-sec">
+                 <img src="assets/images/p-img3.png" alt="/img" />
+               </div>
+               <div class="text-center my-2 mx-2">
+                 <h3 class="my-3">Real state</h3>
+                 <button class="btn btn-2 my-3"><a href="https://aleemdevaloper.github.io/real-state.github.com/" class="sub-main-color">View Project</a> </button>
+               </div>
+             </div>
+
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-lg-4 my-lg-2 my-5 mx-lg-0 mx-md-3 mx-0">
+             <div class="car bg-black rounded-5">
+               <div class="img-sec">
+                 <img src="assets/images/p-img-4.png" alt="/img" />
+               </div>
+               <div class="text-center my-2 mx-2">
+                 <h3 class="my-3">Protfolio Website</h3>
+                 <button class="btn btn-2 my-3"><a href="https://aleemdevaloper.github.io/project.github.io/" class="sub-main-color">View Project</a> </button>
+               </div>
+             </div>
+
+           </div>
+           <div class="col-lg-4 my-lg-2 my-5 mx-lg-0 mx-md-3 mx-0">
+             <div class="car bg-black rounded-5">
+               <div class="img-sec">
+                 <img src="assets/images/p-img-5.png"  alt="/img" />
+               </div>
+               <div class="text-center my-2 mx-2">
+                 <h3 class="my-3">Custom Website</h3>
+                 <button class="btn btn-2 my-3"><a href="https://aleemdevaloper.github.io/slider.github.io/" class="sub-main-color">View Project</a> </button>
+               </div>
+             </div>
+
+           </div>
+           <div class="col-lg-4 my-lg-2 my-5 mx-lg-0 mx-md-3 mx-0">
+             <div class="car bg-black rounded-5">
+               <div class="img-sec">
+                 <img src="assets/images/p-img-7.jpg" alt="/img" />
+               </div>
+               <div class="text-center my-2 mx-2">
+                 <h3 class="my-3">Company website</h3>
+                 <button class="btn btn-2 my-3"><a href="https://aleemdevaloper.github.io/italian-food.github.com/" class="sub-main-color">View Project</a> </button>
+               </div>
+             </div>
+
+           </div>
+         </div>
+
+       </div>
+     </section>   
+     
+
+
+    <section class="clients bg-black py-5" id='client' data-aos="fade-up" data-aos-duration="3000">
+     <section class="c-area">
+       <div class="container">
+         <div class="row">
+           <div class="col-12 py-5 text-center sub-main-color">
+             <h4 class="sub2-main-color">Clients</h4>
+            <h1>My Happy Clients</h1>
+           </div>
+           <div class="col-12 py-3">
+             <div class="slider-area">
+               <div class="c-slider">
+                 <div>
+                   <div class="img-hold">
+                     <img src="assets/images/pt (1).png" alt="" />
+                   </div>
+                 </div>
+                 <div>
+                   <div class="img-hold">
+                     <img src="assets/images/pt (2).png" alt="" />
+                   </div>
+                 </div>
+                 <div>
+                   <div class="img-hold">
+                     <img src="assets/images/pt (3).png" alt="" />
+                   </div>
+                 </div>
+                 <div>
+                   <div class="img-hold">
+                     <img src="assets/images/pt (4).png" alt="" />
+                   </div>
+                 </div>
+                 <div>
+                   <div class="img-hold">
+                     <img src="assets/images/pt (5).png" alt="" />
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+    </section>
+       
+
+
+
+   <section class="skills" id="skills">
+   <div class="container-xxl contianer-md">
+   <div class="row justify-content-center align-items-center pt-4 pb-4" data-aos="fade-up"
+     data-aos-duration="3000">
+     <div class="col-xl-4 col-lg-12 pl-3">
+       <h5 class="sub2-main-color">My Skills</h5>
+       <h1 class="sub-main-color">Let's Explore Popular <br />
+         <font class="main-text">Skills & Experience</font>
+       </h1>
+       <br />
+       <p class="sub2-main-color">By using my professional designing and development skills . I made best websites for businesses . I provide proper client satisfaction with 100% good quality work.</p>
+       <button type="submit" class="btn-2 btn m-2 my-4">Learn More</button>
+     </div>
+     <div class="col-xl-8 col-lg-12">
+
+
+       <div class="row">
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/html.png" alt="" />
+             <h5 class="sub2-main-color">HTML 5</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">95%</h3>
+           </div>
+         </div>
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/css-3.png" alt />
+             <h5 class="sub2-main-color">CSS 3</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">80%</h3>
+           </div>
+         </div>
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/bootstrap.png" alt="" />
+             <h5 class="sub2-main-color">Bootstrap</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">90%</h3>
+           </div>
+         </div>
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/sass (1).png" alt="" />
+             <h5 class="sub2-main-color">Sass</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">90%</h3>
+           </div>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/java-script.png" alt="" />
+             <h5 class="sub2-main-color">Java Script</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">85%</h3>
+           </div>
+         </div>
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/adobe-photoshop.png" alt="" />
+             <h5 class="sub2-main-color">Photoshop</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">70%</h3>
+           </div>
+         </div>
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/ilustrator.png" alt="" />
+             <h5 class="sub2-main-color">Illustrator</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">70%</h3>
+           </div>
+         </div>
+         <div class="col skills-b">
+           <div class="d-flex justify-content-center align-items-center flex-column p-4">
+             <img src="assets/images/figma.png" alt="" />
+             <h5 class="sub2-main-color">Figma</h5>
+           </div>
+           <div class="meter">
+             <h3 class="mtr">80%</h3>
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+
+ </div>
+   </section>
+     
+     <section class="certificate">
+   <div class="container" data-aos="fade-up" data-aos-duration="3000">
+     <div class="row">
+       <div class="col-12">
+         <div class="certificates-txt">
+           <h3>My <font class="main-text">Certificates</font>
+           </h3>
+         </div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-md-4 col-sm-8"><img src="assets/images/cerhtml.png" /></div>
+       <div class="col-md-4 col-sm-8"><img src="assets/images/cercss.png" /></div>
+       <div class="col-md-4 col-sm-8"><img src="assets/images/cerjs.png" /></div>
+     </div>
+   </div>
+     </section>
+
+     
+     <section class="contact-us"  data-aos="fade-up" data-aos-duration="3000" id="contact">
+       <div class="container">
+         <div class="row" data-aos="fade-up" data-aos-duration="3000">
+
+           <div class="col-lg">
+             <div class="contact-txt">
+               <h4>Get in touch</h4>
+               <h1>Let’s Talk For your <font class="main-text">Next Projects</font>
+               </h1>
+               <p class="my-2">Fell free to get in touch . You can easily talk to us 24/7 .</p>
+               
+               <ul>
+                 <li>3+ Experience</li>
+                 <li>Professional Web Development</li>
+                 <li>Best Quality code</li>
+               </ul>
+             </div>
+           </div>
+
+           <div class="col-lg">
+             <div class="contact-form">
+               <form action="https://formspree.io/f/xleqgkaz" method="POST" class="d-flex flex-column">
+                 <div class="d-flex">
+                   <input type="text" name="name" id="" placeholder="Enter Name" required />
+                   <input type="email" name="email" id="" placeholder="Enter email" required />
+                 </div>
+                 <div class="d-flex">
+                   <input type="tel" name="number" id="" placeholder="Enter Number" required />
+                   <input type="text" name="subject" id="" placeholder="Enter Subject" required />
+                 </div>
+                 <textarea name="message" id="" cols="30" rows="4" placeholder="Message" required></textarea>
+                 <div class="d-flex  align-items-center m-2 my-3">
+                   <button class="btn" type="submit">Send us Message</button>
+                 </div>
+
+               </form>
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </section>
+
+     
+     <footer id="footer">
+        <div class="footer-up">
+         <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
+
+              <div class="col d-flex flex-column  justify-content-center">
+                <div class="loc">
+                  <h3>Address :</h3>
+                  <ul>
+                    <li><img src="assets/images/mail.png" alt="" /><a>aleemirfan672@gmail.com</a></li>
+                    <li><img src="assets/images/call.png" alt="" /><a>+92 3224 752036</a></li>
+                    <li><img src="assets/images/location.png" alt="" /><a>Lahore, City Punjab / Pakistan</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="col d-flex justify-content-center flex-column">
+                <div class="fol">
+                  <h3>Follow Me On :</h3>
+                  <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-linkedin"></i></li>
+                    <li><i class="fa fa-skype"></i></li>
+                    <li><i class="fa fa-whatsapp"></i></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="form">
+                  <form action="https://formspree.io/f/xleqgkaz" method="POST">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                      <h2>Contact Us</h2>
+                      <input type="text" name="name" id="" placeholder="Enter Your Name" required />
+                      <input type="email" name="email" id="" placeholder="Enter Your Email" required />
+                      <textarea name="message" id="" cols="30" rows="5" placeholder="Message" required></textarea>
+                      <button class="btn btn-footer" type="submit">Submit</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+              
+
+            </div>
+         </div>
+        </div>
+
+        <div class="footer-down">
+          <div class="container">
+            <div class="text-center">
+              &copy;Copyright 2023, All Rights Reserved <div class="main-color">Made by Muhammed Aleem</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+     <script src="./assets/Jquery/jquery.min.js"></script>
+    <script src="./assets/Js/index.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const cursor = document.querySelector('.arrow');
+      const dot = document.querySelector('.dot');
+ window.addEventListener('mousemove', (event) => {
+  dot.style.transform = `translate(${event.clientX - 0}px, ${event.clientY - 0}px)`;
+  cursor.style.transform = `translate(${event.clientX - 15}px, ${event.clientY - 15}px)`;
+   });
+      AOS.init(); 
+
+
+</script>
+   
+    <noscript>Your browser do not support the Javascript</noscript>
+  </body>
+</html>
